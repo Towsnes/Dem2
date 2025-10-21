@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>  
+    <!-- Header -->
+<header>
+    <div class="header-inner">
+        <div class="logo">StoreT</div>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="has-submenu">
+                    <a href="#" class="active">Shop <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Single Product</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="has-submenu">
+                    <a href="#">Page <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="cart" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </div>
+</header>
+
+<!-- Product -->
+<section class="product-section">
+        <div class="product-image">
+            <img src="/images/product12.jpg" alt="Leather Rockerman Jacket">
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">Premium Leather Shoes</h1>
+            <div class="price">
+                <span class="old-price">$69.00</span>
+                <span class="new-price">$49.00</span>
+            </div>
+            <p class="description">
+            Pellentesque elit eget velit lobortis la mollis dictum suspendisse lectus sem commodo mattis mauris sagittis null.
+            </p>
+            <ul class="features">
+                <li>Conubia nostra posuere portum</li>
+                <li>Tincidunt sem mollis</li>
+                <li>Netus et malesuada</li>
+                <li>Nec malesuada</li>
+            </ul>
+            <div class="product-options">
+                <div class="product-option-group">
+                    <label class="product-option-label">Select Size:</label>
+                    <div class="product-size-options">
+                        <button type="button" class="size-btn" data-size="36">36</button>
+                        <button type="button" class="size-btn" data-size="38">38</button>
+                        <button type="button" class="size-btn" data-size="40">40</button>
+                        <button type="button" class="size-btn" data-size="42">42</button>
+                        <button type="button" class="size-btn" data-size="44">44</button>
+                    </div>
+                </div>
+
+                <div class="product-option-group">
+                    <label class="product-option-label">Select Color:</label>
+                    <div class="product-color-options">
+                        <button type="button" class="color-btn" data-color="Grey" style="background-color: #9e9e9e;"></button>
+                        <button type="button" class="color-btn" data-color="Black" style="background-color: #000;"></button>
+                        <button type="button" class="color-btn" data-color="Navy" style="background-color: #001f3f;"></button>
+                        <button type="button" class="color-btn" data-color="Beige" style="background-color: #d6bfa0;"></button>
+                    </div>
+                </div>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
+            <div class="more-info">
+                <p><strong>SKU:</strong> N/A234-42</p>
+                <p><strong>Category:</strong> Jackets</p>
+                <p><strong>Tags:</strong> Black, Topman</p>
+            </div>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+</section>
+
+<section class="product-tabs-section">
+
+    <div class="product-tabs-nav">
+        <button class="product-tab-btn product-tab-active" data-tab="description">Description</button>
+        <button class="product-tab-btn" data-tab="additional">Additional information</button>
+        <button class="product-tab-btn" data-tab="reviews">Reviews (0)</button>
+    </div>
+
+    <!-- Tab: Description -->
+    <div id="description" class="product-tab-content product-tab-active">
+        <h2 class="product-tab-title">Description</h2>
+        <p class="product-description-text">Augue libero aenean euismod justo metus purus dictum etiam. Himenaeos duis si massa sed iaculis platea malesuada tristique dis. Aliquet lobortis est ac convallis primis fames ad proin sit. Maximus massa tempus magnis eu augue vivamus arcu dis auctor leo. Libero elit tempus eros velit ipsum gravida. Senectus cursus nisl dignissim rhoncus vestibulum laoreet duis.</p>
+        <p class="product-description-text">Magnis nibh class magna arcu risus massa sit dignissim morbi placerat cubilia. Porttitor nostra vestibulum sociosqu duis ut accumsan ultrices. Sem ultricies posuere nullam velit curae risus pulvinar finibus primis vehicula. Tincidunt dictumst aliquet ac lacus dis consectetuer. Quam curae tempor donec orci at platea lobortis dictum sit est sapien.</p>
+    </div>
+
+    <!-- Tab: Additional Info -->
+    <div id="additional" class="product-tab-content">
+        <h2 class="product-tab-title">Additional information</h2>
+        <table class="product-info-table">
+            <tr><td>Weight</td><td>1 kg</td></tr>
+            <tr><td>Dimensions</td><td>60 × 35 × 150 cm</td></tr>
+            <tr><td>Size</td><td>36, 38, 40, 42, 44, 46, 48, 50</td></tr>
+            <tr><td>Color</td><td>Grey</td></tr>
+        </table>
+    </div>
+
+    <!-- Tab: Reviews -->
+    <div id="reviews" class="product-tab-content">
+        <h2 class="product-tab-title">Reviews</h2>
+        <p class="product-review-empty">There are no reviews yet.</p>
+        <p class="product-review-invite">Be the first to review "Slim Fit Straight Leg Jeans"</p>
+        
+        <form class="product-review-form" id="reviewForm">
+            <p class="product-review-note">
+                Your email address will not be published. Required fields are marked 
+                <span class="product-required">*</span>
+            </p>
+
+            <label class="product-form-label">Your rating <span class="product-required">*</span></label>
+            <div class="product-rating-stars">
+                <span class="product-star" data-rating="1">☆</span>
+                <span class="product-star" data-rating="2">☆</span>
+                <span class="product-star" data-rating="3">☆</span>
+                <span class="product-star" data-rating="4">☆</span>
+                <span class="product-star" data-rating="5">☆</span>
+            </div>
+
+            <label class="product-form-label">Your review <span class="product-required">*</span></label>
+            <textarea class="product-form-textarea" required></textarea>
+
+            <label class="product-form-label">Name <span class="product-required">*</span></label>
+            <input type="text" class="product-form-input" required>
+
+            <label class="product-form-label">Email <span class="product-required">*</span></label>
+            <input type="email" class="product-form-input" required>
+
+            <div class="product-form-checkbox-wrap">
+                <input type="checkbox" class="product-form-checkbox" id="save-info">
+                <label class="product-form-checkbox-label" for="save-info">
+                    Save my name, email, and website in this browser for the next time I comment.
+                </label>
+            </div>
+
+            <button type="submit" class="product-form-submit">Submit</button>
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <!-- Main footer with background image -->
+    <div class="main-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <h2>StoreT</h2>
+                    <address>
+                    Trường đại học giao thông vận tải<br>
+                    Towsnes-Huy: Hà Nội
+                    </address>
+                    <a href="mailto:hello@yourdomain.tld" class="footer-email">hinsiki11@gmail.com</a>
+                    <div class="footer-phone">0349887716</div>
+                    <img src="/images/visa.png" alt="Visa">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Sportswear</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Face & Body</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Delivery & returns</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Gift Voucher</a></li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom footer with solid black background -->
+    <div class="bottom-footer">
+        <div class="footer-content">
+            <div class="footer-legal">
+                <div class="copyright">Copyright © 2025 Towsnes-Huy, Trường đại học giao thông vận tải.</div>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Term of use</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/tabProduct.js"></script>
+</body>
+</html>
